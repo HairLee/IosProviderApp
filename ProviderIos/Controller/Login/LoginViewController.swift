@@ -29,7 +29,7 @@ class LoginViewController: BaseViewController {
 
     @IBAction func loginAction(_ sender: Any) {
         showDialog()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             guard case self = self else {
                 return
             }

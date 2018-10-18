@@ -34,6 +34,7 @@
 		12FBE3872178747B005ECEFD /* SocialNetworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FBE3852178747B005ECEFD /* SocialNetworkTableViewCell.xib */; };
 		12FBE38A21787DE9005ECEFD /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE38821787DE9005ECEFD /* SettingTableViewCell.swift */; };
 		12FBE38B21787DE9005ECEFD /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FBE38921787DE9005ECEFD /* SettingTableViewCell.xib */; };
+		12FBE38D21789C6D005ECEFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE38C21789C6D005ECEFD /* MapViewController.swift */; };
 		B71ED479719A31195BD0561D /* Pods_ProviderIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40625109F0FC04C02688E860 /* Pods_ProviderIos.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		12FBE3852178747B005ECEFD /* SocialNetworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkTableViewCell.xib; sourceTree = "<group>"; };
 		12FBE38821787DE9005ECEFD /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		12FBE38921787DE9005ECEFD /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		12FBE38C21789C6D005ECEFD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		159D565808940F279FC69755 /* Pods-ProviderIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProviderIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProviderIos/Pods-ProviderIos.debug.xcconfig"; sourceTree = "<group>"; };
 		40625109F0FC04C02688E860 /* Pods_ProviderIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProviderIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -279,6 +281,7 @@
 		12FBE37621786B2B005ECEFD /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				12FBE38C21789C6D005ECEFD /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				12FBE38A21787DE9005ECEFD /* SettingTableViewCell.swift in Sources */,
 				12FBE375217867DE005ECEFD /* HomeViewController.swift in Sources */,
 				12FBE38021786EE4005ECEFD /* ProfileImageTableViewCell.swift in Sources */,
+				12FBE38D21789C6D005ECEFD /* MapViewController.swift in Sources */,
 				12FBE36221783EB8005ECEFD /* LoginViewModel.swift in Sources */,
 				12FBE32821783818005ECEFD /* AppDelegate.swift in Sources */,
 				12FBE37C21786E9A005ECEFD /* AccountViewModel.swift in Sources */,

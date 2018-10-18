@@ -51,6 +51,7 @@
                 <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="wvE-Qc-S2d" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p7i-oj-shK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -68,14 +69,38 @@
         <!--Map-->
         <scene sceneID="1tO-P2-Yfq">
             <objects>
-                <viewController id="Z4o-87-gt6" sceneMemberID="viewController">
+                <viewController id="Z4o-87-gt6" customClass="MapViewController" customModule="ProviderIos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6o-0m-QbS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-xk-xID">
+                                <rect key="frame" x="0.0" y="20" width="375" height="470"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qe-Ro-DhL">
+                                <rect key="frame" x="0.0" y="490" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ip0-Vn-owa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Qe-Ro-DhL" firstAttribute="top" secondItem="v9e-xk-xID" secondAttribute="bottom" id="DNv-EG-vBL"/>
+                            <constraint firstItem="af3-Kj-oN2" firstAttribute="trailing" secondItem="4Qe-Ro-DhL" secondAttribute="trailing" id="Eb3-s4-2MD"/>
+                            <constraint firstItem="af3-Kj-oN2" firstAttribute="trailing" secondItem="v9e-xk-xID" secondAttribute="trailing" id="SJJ-sk-DOb"/>
+                            <constraint firstItem="v9e-xk-xID" firstAttribute="leading" secondItem="af3-Kj-oN2" secondAttribute="leading" id="c22-KH-ssl"/>
+                            <constraint firstItem="af3-Kj-oN2" firstAttribute="bottom" secondItem="4Qe-Ro-DhL" secondAttribute="bottom" id="fkK-0g-Hw2"/>
+                            <constraint firstItem="4Qe-Ro-DhL" firstAttribute="leading" secondItem="af3-Kj-oN2" secondAttribute="leading" id="iPg-hQ-vX6"/>
+                            <constraint firstItem="v9e-xk-xID" firstAttribute="top" secondItem="af3-Kj-oN2" secondAttribute="top" id="yzW-Kn-Xem"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="af3-Kj-oN2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map_ic" largeContentSizeImage="map_ic" id="h4a-ty-dNf"/>
+                    <connections>
+                        <outlet property="myMapView" destination="v9e-xk-xID" id="ntl-0w-diJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ON-UD-yfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
