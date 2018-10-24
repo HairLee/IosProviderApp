@@ -72,12 +72,14 @@ PODS:
   - MRProgress/ProgressBaseClass (0.8.3)
   - MRProgress/Stopable (0.8.3):
     - MRProgress/Helper
+  - OneSignal (2.9.2)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - GoogleMaps
   - MRProgress/AFNetworking
+  - OneSignal (< 3.0, >= 2.6.2)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -86,6 +88,7 @@ SPEC REPOS:
     - Alamofire
     - GoogleMaps
     - MRProgress
+    - OneSignal
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -93,8 +96,9 @@ SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  OneSignal: e00b18be0a81e6e2009d27873c76a6153e5551fe
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 420a2a78648a9f4b820a0930a5073ca63a7d1da4
+PODFILE CHECKSUM: 174f658847112ad312e099183fc872249e84cd53
 
 COCOAPODS: 1.5.3

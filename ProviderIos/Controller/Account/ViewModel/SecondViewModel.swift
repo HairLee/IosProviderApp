@@ -24,6 +24,7 @@ protocol SecondViewModelItem {
 }
 
 public func getDataFromServer()  {
+
     Alamofire.request("http://api.androidhive.info/contacts/").responseJSON { (responseData) -> Void in
         if((responseData.result.value) != nil) {
             let swiftyJsonVar = JSON(responseData.result.value!)
@@ -45,6 +46,7 @@ class SecondViewModel: NSObject {
         super.init()
         
         getDataFromServer()
+        
         
         let topItem = SecondViewModelTopItem(about: "Ahihi")
         secondItems.append(topItem)
