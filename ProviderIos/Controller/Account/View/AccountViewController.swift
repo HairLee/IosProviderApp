@@ -10,14 +10,11 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
-    
-    
-    
-  
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
          tableView.dataSource = self
+        tableView.delegate = self
         
         tableView?.register(ProfileImageTableViewCell.nib, forCellReuseIdentifier: ProfileImageTableViewCell.identifier)
         
@@ -67,4 +64,18 @@ extension AccountViewController: UITableViewDataSource {
     }
     
     
+}
+
+extension AccountViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+     
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Ambition \(indexPath.row)")
+        let detailVc = AccountDetailViewController()
+        navigationController?.pushViewController(detailVc, animated: true)
+    }
 }
