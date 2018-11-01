@@ -25,16 +25,7 @@ protocol SecondViewModelItem {
 
 public func getDataFromServer()  {
 
-    Alamofire.request("http://api.androidhive.info/contacts/").responseJSON { (responseData) -> Void in
-        if((responseData.result.value) != nil) {
-            let swiftyJsonVar = JSON(responseData.result.value!)
-            
-            if let resData = swiftyJsonVar["contacts"].arrayObject {
-                print(resData)
-            }
-            
-        }
-    }
+   
 }
 
 
