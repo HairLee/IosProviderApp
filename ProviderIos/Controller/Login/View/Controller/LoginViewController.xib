@@ -86,6 +86,9 @@
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="FYo-eY-A1b"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Rs7-Bs-Kfx">
+                    <rect key="frame" x="108" y="151" width="159" height="74"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -95,6 +98,8 @@
                 <constraint firstItem="xFt-EU-2PW" firstAttribute="trailing" secondItem="Pn1-HR-Uxt" secondAttribute="trailing" id="ODj-03-qhc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2pC-ij-nps" secondAttribute="bottom" id="Ogv-6z-nFY"/>
                 <constraint firstItem="Pn1-HR-Uxt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="S7F-JT-Lrq"/>
+                <constraint firstItem="Pn1-HR-Uxt" firstAttribute="top" secondItem="Rs7-Bs-Kfx" secondAttribute="bottom" constant="60" id="SuL-N9-VDz"/>
+                <constraint firstItem="Rs7-Bs-Kfx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cmf-fE-F8z"/>
                 <constraint firstItem="Pn1-HR-Uxt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hJC-Rq-oJo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pn1-HR-Uxt" secondAttribute="trailing" constant="20" id="hem-s9-iND"/>
                 <constraint firstItem="xFt-EU-2PW" firstAttribute="leading" secondItem="Pn1-HR-Uxt" secondAttribute="leading" id="lus-Dc-aV7"/>
@@ -107,5 +112,6 @@
     </objects>
     <resources>
         <image name="logion_bg" width="375" height="650"/>
+        <image name="logo" width="159" height="74"/>
     </resources>
 </document>

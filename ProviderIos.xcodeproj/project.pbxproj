@@ -29,6 +29,7 @@
 		1284F35A2182B3E200A1D4C0 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284F3562182B3E100A1D4C0 /* Bindable.swift */; };
 		1284F35B2182B3E200A1D4C0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284F3572182B3E200A1D4C0 /* JSON.swift */; };
 		1284F35C2182B3E200A1D4C0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284F3582182B3E200A1D4C0 /* Result.swift */; };
+		12E6F253219189B500DD3114 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6F252219189B500DD3114 /* Candy.swift */; };
 		12FBE32821783818005ECEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE32721783818005ECEFD /* AppDelegate.swift */; };
 		12FBE32A21783818005ECEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE32921783818005ECEFD /* ViewController.swift */; };
 		12FBE32D21783818005ECEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12FBE32B21783818005ECEFD /* Main.storyboard */; };
@@ -123,6 +124,7 @@
 		1284F3562182B3E100A1D4C0 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		1284F3572182B3E200A1D4C0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		1284F3582182B3E200A1D4C0 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		12E6F252219189B500DD3114 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		12FBE32421783818005ECEFD /* ProviderIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProviderIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FBE32721783818005ECEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12FBE32921783818005ECEFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		1284F34F2182AD4000A1D4C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12E6F252219189B500DD3114 /* Candy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,44 @@
 			sourceTree = "<group>";
 		};
 		1284F3542182B13D00A1D4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12E6F24D21914A8C00DD3114 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12E6F24E21914A8C00DD3114 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12E6F24F21914A8C00DD3114 /* Controller */,
+				12E6F25021914A8C00DD3114 /* ViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12E6F24F21914A8C00DD3114 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12FBE38C21789C6D005ECEFD /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12E6F25021914A8C00DD3114 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		12E6F25121914A8C00DD3114 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -500,7 +541,9 @@
 		12FBE37621786B2B005ECEFD /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				12FBE38C21789C6D005ECEFD /* MapViewController.swift */,
+				12E6F25121914A8C00DD3114 /* Model */,
+				12E6F24E21914A8C00DD3114 /* View */,
+				12E6F24D21914A8C00DD3114 /* ViewModel */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -842,6 +885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12FBE35D217838F9005ECEFD /* LoginViewController.swift in Sources */,
+				12E6F253219189B500DD3114 /* Candy.swift in Sources */,
 				12FBE36B217844D9005ECEFD /* UITextFieldExtension.swift in Sources */,
 				1284F3472180925E00A1D4C0 /* Friend.swift in Sources */,
 				12FBE37A21786B5E005ECEFD /* AccountViewController.swift in Sources */,
