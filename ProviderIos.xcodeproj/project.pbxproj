@@ -30,6 +30,8 @@
 		1284F35B2182B3E200A1D4C0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284F3572182B3E200A1D4C0 /* JSON.swift */; };
 		1284F35C2182B3E200A1D4C0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1284F3582182B3E200A1D4C0 /* Result.swift */; };
 		12E6F253219189B500DD3114 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6F252219189B500DD3114 /* Candy.swift */; };
+		12E6F2552191AA3700DD3114 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6F2542191AA3700DD3114 /* DetailViewController.swift */; };
+		12E6F2572191ABFA00DD3114 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6F2562191ABFA00DD3114 /* SearchFooter.swift */; };
 		12FBE32821783818005ECEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE32721783818005ECEFD /* AppDelegate.swift */; };
 		12FBE32A21783818005ECEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBE32921783818005ECEFD /* ViewController.swift */; };
 		12FBE32D21783818005ECEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12FBE32B21783818005ECEFD /* Main.storyboard */; };
@@ -125,6 +127,8 @@
 		1284F3572182B3E200A1D4C0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		1284F3582182B3E200A1D4C0 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		12E6F252219189B500DD3114 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		12E6F2542191AA3700DD3114 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		12E6F2562191ABFA00DD3114 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		12FBE32421783818005ECEFD /* ProviderIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProviderIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FBE32721783818005ECEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12FBE32921783818005ECEFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 		1284F34D2182AD4000A1D4C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				12E6F2542191AA3700DD3114 /* DetailViewController.swift */,
 				12FBE374217867DE005ECEFD /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -281,6 +286,7 @@
 		1284F34E2182AD4000A1D4C0 /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				12E6F2562191ABFA00DD3114 /* SearchFooter.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -902,7 +908,9 @@
 				1284F3202180147700A1D4C0 /* TopTableViewCell.swift in Sources */,
 				1284F35B2182B3E200A1D4C0 /* JSON.swift in Sources */,
 				12FBE38A21787DE9005ECEFD /* SettingTableViewCell.swift in Sources */,
+				12E6F2572191ABFA00DD3114 /* SearchFooter.swift in Sources */,
 				1284F32A218026F900A1D4C0 /* HeaderUIView.swift in Sources */,
+				12E6F2552191AA3700DD3114 /* DetailViewController.swift in Sources */,
 				12FBE375217867DE005ECEFD /* HomeViewController.swift in Sources */,
 				1284F3592182B3E200A1D4C0 /* Alert.swift in Sources */,
 				12FBE38021786EE4005ECEFD /* ProfileImageTableViewCell.swift in Sources */,
@@ -1145,7 +1153,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7PLB3P6BM;
 				INFOPLIST_FILE = ProviderIos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1165,7 +1173,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7PLB3P6BM;
 				INFOPLIST_FILE = ProviderIos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
